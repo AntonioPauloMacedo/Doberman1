@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Placar Agora — resultados esportivos, partidas ao vivo, classificações e notícias."
+    >
+
+    <title>Placar Agora | Resultados Esportivos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <a href="#" class="logo" aria-label="Placar Agora - Página inicial">
+                <span class="logo-icon">P</span>
+                <span>Placar<span>Agora</span></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="#" class="active">Início</a>
+                <a href="#ao-vivo">Ao Vivo</a>
+                <a href="#futebol">Futebol</a>
+                <a href="#basquete">Basquete</a>
+                <a href="#tenis">Tênis</a>
+                <a href="#competicoes">Competições</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <label class="search-box">
+                    <span class="search-icon">⌕</span>
+                    <input
+                        type="search"
+                        placeholder="Pesquisar..."
+                        aria-label="Pesquisar"
+                    >
+                </label>
+
+                <button class="mobile-menu" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ==================== HERO ==================== -->
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="eyebrow">
+                        <span class="live-dot"></span>
+                        RESULTADOS EM TEMPO REAL
+                    </span>
+
+                    <h1>
+                        O jogo acontece.
+                        <strong>Você acompanha.</strong>
+                    </h1>
+
+                    <p>
+                        Placar, resultados, partidas ao vivo e tudo sobre
+                        suas competições favoritas em um só lugar.
+                    </p>
+
+                    <a href="#ao-vivo" class="btn btn-primary">
+                        <span>▶</span>
+                        Ver jogos ao vivo
+                    </a>
+                </div>
+
+                <div class="hero-score">
+
+                    <div class="featured-label">
+                        <span class="live-dot"></span>
+                        DESTAQUE
+                    </div>
+
+                    <div class="featured-match">
+
+                        <div class="featured-team">
+                            <div class="team-badge badge-red">F</div>
+                            <span>Flamengo</span>
+                        </div>
+
+                        <div class="featured-score">
+                            <small>67'</small>
+                            <strong>2 <i>×</i> 1</strong>
+                            <span>2º TEMPO</span>
+                        </div>
+
+                        <div class="featured-team">
+                            <div class="team-badge badge-green">P</div>
+                            <span>Palmeiras</span>
+                        </div>
+
+                    </div>
+
+                    <div class="featured-league">
+                        🇧🇷 Brasileirão Série A
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== FILTROS ==================== -->
+        <section class="filters-section">
+            <div class="container">
+
+                <div class="filters" role="navigation" aria-label="Filtros de partidas">
+
+                    <a href="#" class="filter active">Hoje</a>
+                    <a href="#" class="filter">Ontem</a>
+                    <a href="#" class="filter">Amanhã</a>
+                    <a href="#" class="filter filter-live">
+                        <span class="live-dot"></span>
+                        Ao vivo
+                    </a>
+                    <a href="#" class="filter">Finalizados</a>
+                    <a href="#" class="filter">Agendados</a>
+
+                    <span class="filter-divider"></span>
+
+                    <a href="#" class="filter sport-filter active">
+                        ⚽ Futebol
+                    </a>
+                    <a href="#" class="filter sport-filter">
+                        🏀 Basquete
+                    </a>
+                    <a href="#" class="filter sport-filter">
+                        🎾 Tênis
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+        <div class="container page-layout">
+
+            <!-- ==================== SIDEBAR ==================== -->
+            <aside class="sidebar">
+
+                <div class="sidebar-card" id="competicoes">
+
+                    <div class="section-heading">
+                        <h2>Competições</h2>
+                        <a href="#">Ver todas</a>
+                    </div>
+
+                    <nav class="competition-list">
+
+                        <a href="#" class="competition active">
+                            <span class="competition-icon">🇧🇷</span>
+                            <span>Brasileirão</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🏴</span>
+                            <span>Premier League</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🇪🇸</span>
+                            <span>La Liga</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">⭐</span>
+                            <span>Champions League</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🌎</span>
+                            <span>Libertadores</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🇧🇷</span>
+                            <span>Copa do Brasil</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🏀</span>
+                            <span>NBA</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🎾</span>
+                            <span>ATP</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                        <a href="#" class="competition">
+                            <span class="competition-icon">🎾</span>
+                            <span>WTA</span>
+                            <span class="arrow">›</span>
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- MINI JOGO -->
+                <div class="sidebar-card mini-match-card">
+
+                    <span class="card-label">PRÓXIMO JOGO</span>
+
+                    <div class="mini-match-date">
+                        Hoje · 21:30
+                    </div>
+
+                    <div class="mini-teams">
+
+                        <div>
+                            <div class="small-badge badge-white">R</div>
+                            <strong>Real Madrid</strong>
+                        </div>
+
+                        <span>×</span>
+
+                        <div>
+                            <div class="small-badge badge-blue">B</div>
+                            <strong>Barcelona</strong>
+                        </div>
+
+                    </div>
+
+                    <span class="mini-league">La Liga</span>
+
+                </div>
+
+            </aside>
+
+
+            <!-- ==================== MAIN CONTENT ==================== -->
+            <div class="main-content">
+
+                <!-- AO VIVO -->
+                <section id="ao-vivo" class="content-section">
+
+                    <div class="section-heading main-heading">
+                        <div>
+                            <span class="section-kicker">
+                                <span class="live-dot"></span>
+                                AGORA
+                            </span>
+                            <h2>Ao Vivo</h2>
+                        </div>
+
+                        <a href="#" class="view-all">
+                            Ver todos <span>→</span>
+                        </a>
+                    </div>
+
+
+                    <div class="live-grid">
+
+                        <!-- JOGO 1 -->
+                        <article class="match-card live-match">
+
+                            <div class="match-top">
+                                <span class="league-name">
+                                    🇧🇷 Brasileirão Série A
+                                </span>
+
+                                <span class="match-live">
+                                    <span class="live-dot"></span>
+                                    AO VIVO
+                                </span>
+                            </div>
+
+                            <div class="match-content">
+
+                                <div class="match-team">
+                                    <div class="team-badge badge-red">F</div>
+                                    <strong>Flamengo</strong>
+                                    <span class="team-form">Casa</span>
+                                </div>
+
+                                <div class="match-score">
+                                    <strong>2</strong>
+                                    <span>-</span>
+                                    <strong>1</strong>
+                                    <small>67'</small>
+                                </div>
+
+                                <div class="match-team">
+                                    <div class="team-badge badge-green">P</div>
+                                    <strong>Palmeiras</strong>
+                                    <span class="team-form">Fora</span>
+                                </div>
+
+                            </div>
+
+                            <div class="match-footer">
+                                <span>2º tempo</span>
+                                <a href="#">Detalhes →</a>
+                            </div>
+
+                        </article>
+
+
+                        <!-- JOGO 2 -->
+                        <article class="match-card live-match">
+
+                            <div class="match-top">
+                                <span class="league-name">
+                                    🇬🇧 Premier League
+                                </span>
+
+                                <span class="match-live">
+                                    <span class="live-dot"></span>
+                                    AO VIVO
+                                </span>
+                            </div>
+
+                            <div class="match-content">
+
+                                <div class="match-team">
+                                    <div class="team-badge badge-sky">M</div>
+                                    <strong>Man City</strong>
+                                    <span class="team-form">Casa</span>
+                                </div>
+
+                                <div class="match-score">
+                                    <strong>1</strong>
+                                    <span>-</span>
+                                    <strong>1</strong>
+                                    <small>73'</small>
+                                </div>
+
+                                <div class="match-team">
+                                    <div class="team-badge badge-red">L</div>
+                                    <strong>Liverpool</strong>
+                                    <span class="team-form">Fora</span>
+                                </div>
+
+                            </div>
+
+                            <div class="match-footer">
+                                <span>2º tempo</span>
+                                <a href="#">Detalhes →</a>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+
+                <!-- RESULTADOS DE HOJE -->
+                <section id="futebol" class="content-section">
+
+                    <div class="section-heading main-heading">
+                        <div>
+                            <span class="section-kicker">RESULTADOS</span>
+                            <h2>Resultados de Hoje</h2>
+                        </div>
+
+                        <a href="#" class="view-all">
+                            Ver calendário <span>→</span>
+                        </a>
+                    </div>
+
+
+                    <div class="results-card">
+
+                        <div class="league-header">
+                            <div>
+                                <span class="league-flag">🇧🇷</span>
+                                <div>
+                                    <strong>Brasileirão Série A</strong>
+                                    <small>Rodada 28</small>
+                                </div>
+                            </div>
+
+                            <span class="league-status">FINALIZADO</span>
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <div class="result-team">
+                                <span class="team-mini badge-black">C</span>
+                                <span>Corinthians</span>
+                            </div>
+
+                            <div class="result-score">
+                                <strong>0</strong>
+                                <span>-</span>
+                                <strong>0</strong>
+                            </div>
+
+                            <div class="result-team away">
+                                <span>Santos</span>
+                                <span class="team-mini badge-white">S</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <div class="result-team">
+                                <span class="team-mini badge-blue">G</span>
+                                <span>Grêmio</span>
+                            </div>
+
+                            <div class="result-score">
+                                <strong>3</strong>
+                                <span>-</span>
+                                <strong>2</strong>
+                            </div>
+
+                            <div class="result-team away">
+                                <span>Internacional</span>
+                                <span class="team-mini badge-red">I</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <div class="result-team">
+                                <span class="team-mini badge-red">S</span>
+                                <span>São Paulo</span>
+                            </div>
+
+                            <div class="result-score">
+                                <strong>2</strong>
+                                <span>-</span>
+                                <strong>0</strong>
+                            </div>
+
+                            <div class="result-team away">
+                                <span>Bahia</span>
+                                <span class="team-mini badge-blue">B</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EUROPA -->
+                    <div class="results-card">
+
+                        <div class="league-header">
+                            <div>
+                                <span class="league-flag">🇪🇸</span>
+                                <div>
+                                    <strong>La Liga</strong>
+                                    <small>Rodada 10</small>
+                                </div>
+                            </div>
+
+                            <span class="league-status">FINALIZADO</span>
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <div class="result-team">
+                                <span class="team-mini badge-white">R</span>
+                                <span>Real Madrid</span>
+                            </div>
+
+                            <div class="result-score">
+                                <strong>2</strong>
+                                <span>-</span>
+                                <strong>0</strong>
+                            </div>
+
+                            <div class="result-team away">
+                                <span>Barcelona</span>
+                                <span class="team-mini badge-blue">B</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="result-row">
+
+                            <div class="result-team">
+                                <span class="team-mini badge-orange">A</span>
+                                <span>Atlético Madrid</span>
+                            </div>
+
+                            <div class="result-score">
+                                <strong>1</strong>
+                                <span>-</span>
+                                <strong>1</strong>
+                            </div>
+
+                            <div class="result-team away">
+                                <span>Sevilla</span>
+                                <span class="team-mini badge-red">S</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- PRÓXIMOS JOGOS -->
+                <section class="content-section">
+
+                    <div class="section-heading main-heading">
+                        <div>
+                            <span class="section-kicker">AGENDA</span>
+                            <h2>Próximos Jogos</h2>
+                        </div>
+
+                        <a href="#" class="view-all">
+                            Ver todos <span>→</span>
+                        </a>
+                    </div>
+
+
+                    <div class="upcoming-list">
+
+                        <article class="upcoming-card">
+
+                            <div class="upcoming-date">
+                                <strong>HOJE</strong>
+                                <span>21:30</span>
+                            </div>
+
+                            <div class="upcoming-teams">
+                                <div>
+                                    <span class="team-mini badge-white">R</span>
+                                    Real Madrid
+                                </div>
+
+                                <span class="vs">VS</span>
+
+                                <div>
+                                    <span class="team-mini badge-blue">B</span>
+                                    Barcelona
+                                </div>
+                            </div>
+
+                            <div class="upcoming-league">
+                                🇪🇸 La Liga
+                            </div>
+
+                            <button class="star-button" aria-label="Favoritar partida">
+                                ☆
+                            </button>
+
+                        </article>
+
+
+                        <article class="upcoming-card">
+
+                            <div class="upcoming-date">
+                                <strong>HOJE</strong>
+                                <span>22:00</span>
+                            </div>
+
+                            <div class="upcoming-teams">
+                                <div>
+                                    <span class="team-mini badge-sky">M</span>
+                                    Man City
+                                </div>
+
+                                <span class="vs">VS</span>
+
+                                <div>
+                                    <span class="team-mini badge-red">L</span>
+                                    Liverpool
+                                </div>
+                            </div>
+
+                            <div class="upcoming-league">
+                                🏴 Premier League
+                            </div>
+
+                            <button class="star-button" aria-label="Favoritar partida">
+                                ☆
+                            </button>
+
+                        </article>
+
+
+                        <article class="upcoming-card">
+
+                            <div class="upcoming-date">
+                                <strong>AMANHÃ</strong>
+                                <span>19:00</span>
+                            </div>
+
+                            <div class="upcoming-teams">
+                                <div>
+                                    <span class="team-mini badge-red">F</span>
+                                    Flamengo
+                                </div>
+
+                                <span class="vs">VS</span>
+
+                                <div>
+                                    <span class="team-mini badge-green">P</span>
+                                    Palmeiras
+                                </div>
+                            </div>
+
+                            <div class="upcoming-league">
+                                🇧🇷 Brasileirão
+                            </div>
+
+                            <button class="star-button" aria-label="Favoritar partida">
+                                ☆
+                            </button>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+            <!-- ==================== RIGHT SIDEBAR ==================== -->
+            <aside class="right-sidebar">
+
+                <!-- CLASSIFICAÇÃO -->
+                <section class="side-section">
+
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-kicker">TABELA</span>
+                            <h2>Brasileirão</h2>
+                        </div>
+
+                        <a href="#">Ver tudo</a>
+                    </div>
+
+                    <div class="table-card">
+
+                        <div class="table-header">
+                            <span>#</span>
+                            <span>TIME</span>
+                            <span>J</span>
+                            <span>P</span>
+                        </div>
+
+
+                        <div class="table-row leader">
+                            <span>1</span>
+                            <strong>
+                                <i class="table-team badge-red">F</i>
+                                Flamengo
+                            </strong>
+                            <span>28</span>
+                            <b>61</b>
+                        </div>
+
+                        <div class="table-row">
+                            <span>2</span>
+                            <strong>
+                                <i class="table-team badge-green">P</i>
+                                Palmeiras
+                            </strong>
+                            <span>28</span>
+                            <b>58</b>
+                        </div>
+
+                        <div class="table-row">
+                            <span>3</span>
+                            <strong>
+                                <i class="table-team badge-blue">G</i>
+                                Grêmio
+                            </strong>
+                            <span>28</span>
+                            <b>52</b>
+                        </div>
+
+                        <div class="table-row">
+                            <span>4</span>
+                            <strong>
+                                <i class="table-team badge-red">S</i>
+                                São Paulo
+                            </strong>
+                            <span>28</span>
+                            <b>49</b>
+                        </div>
+
+                        <div class="table-row">
+                            <span>5</span>
+                            <strong>
+                                <i class="table-team badge-black">C</i>
+                                Corinthians
+                            </strong>
+                            <span>28</span>
+                            <b>45</b>
+                        </div>
+
+                        <div class="table-row">
+                            <span>6</span>
+                            <strong>
+                                <i class="table-team badge-blue">B</i>
+                                Bahia
+                            </strong>
+                            <span>28</span>
+                            <b>43</b>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- NOTÍCIAS -->
+                <section class="side-section">
+
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-kicker">ATUALIZAÇÕES</span>
+                            <h2>Últimas Notícias</h2>
+                        </div>
+
+                        <a href="#">Mais</a>
+                    </div>
+
+
+                    <div class="news-list">
+
+                        <article class="news-card">
+
+                            <div class="news-image news-image-1">
+                                ⚽
+                            </div>
+
+                            <div class="news-content">
+                                <span>FUTEBOL · 12 MIN</span>
+                                <h3>
+                                    Flamengo vence clássico e mantém liderança
+                                </h3>
+                                <p>
+                                    Equipe rubro-negra conquista três pontos importantes...
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="news-card">
+
+                            <div class="news-image news-image-2">
+                                🏆
+                            </div>
+
+                            <div class="news-content">
+                                <span>CHAMPIONS · 35 MIN</span>
+                                <h3>
+                                    Grandes jogos movimentam a rodada europeia
+                                </h3>
+                                <p>
+                                    Confira os principais confrontos desta semana...
+                                </p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="news-card">
+
+                            <div class="news-image news-image-3">
+                                🏀
+                            </div>
+
+                            <div class="news-content">
+                                <span>NBA · 1 H</span>
+                                <h3>
+                                    Temporada da NBA começa com grandes duelos
+                                </h3>
+                                <p>
+                                    As principais equipes entram em quadra...
+                                </p>
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <span class="logo-icon">P</span>
+                    <span>Placar<span>Agora</span></span>
+                </a>
+
+                <p>
+                    Resultados esportivos, placares ao vivo e tudo
+                    sobre o mundo dos esportes.
+                </p>
+
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="X">𝕏</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Esportes</h3>
+                <a href="#">Futebol</a>
+                <a href="#">Basquete</a>
+                <a href="#">Tênis</a>
+                <a href="#">Vôlei</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Competições</h3>
+                <a href="#">Brasileirão</a>
+                <a href="#">Champions League</a>
+                <a href="#">Libertadores</a>
+                <a href="#">Premier League</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Placar Agora</h3>
+                <a href="#">Sobre nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Termos de uso</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+                <span>© 2026 Placar Agora. Todos os direitos reservados.</span>
+                <span>Resultados meramente ilustrativos.</span>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
